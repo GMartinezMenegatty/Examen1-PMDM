@@ -7,9 +7,11 @@ fun main() {
     gestor()
 
     println("---- Segunda llamada ----")
+    nivel_actual = 2
     gestor()
 
     println("---- Tercera llamada ----")
+    nivel_actual = -1
     gestor()
 
 

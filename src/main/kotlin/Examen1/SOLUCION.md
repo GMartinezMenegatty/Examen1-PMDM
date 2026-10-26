@@ -49,6 +49,7 @@ Se implementaron funciones para cambiar de estado según las condiciones de los 
 
 ### Test 
 
+Los tests no se pudieron realizar ya que hubo un error.
 
 
 
