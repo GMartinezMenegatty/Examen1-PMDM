@@ -44,9 +44,11 @@ específicas para manejar las acciones del ascensor.
     
 ### Transiciones
 
+Las transiciones entre los estados se manejaron de acuerdo al diagrama de estados. 
+Se implementaron funciones para cambiar de estado según las condiciones de los botones y el nivel actual.
+
 ### Test 
 
-### Documentación 
 
 
 
