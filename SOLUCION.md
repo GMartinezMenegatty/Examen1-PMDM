@@ -1,7 +1,11 @@
 # Examen Máquina de Estados
 
+---
+
+## PMDM
 ## Gabriela Martinez Menegatty
 
+---
 
 ## Diagrama de estados
 
@@ -22,3 +26,8 @@ stateDiagram-v2
 
 
 ```
+
+
+
+
+
