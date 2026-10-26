@@ -18,7 +18,19 @@ fun gestor(): Int {
     when (estado_actual) {
         is Estados.Idle -> {
             nivel_actual = 0
-            estado_actual = Estados.Idle
+            println("El ascensor está en Garcia Barbon, nivel actual: $nivel_actual")
+
+            if(Niveles.nivel_1.value == true){
+                println("El ascensor se moverá hacia arriba, nivel actual: $nivel_actual")
+
+                estado_actual = Estados.MovingUP(nivel_actual = 1)
+
+                println("El ascensor está en Plaza de Compostela, nivel actual: $nivel_actual")
+
+            } else {
+                println("El ascensor está en error, nivel actual: $nivel_actual")
+                estado_actual = Estados.Error(nivel_actual = -1)
+            }
 
             return nivel_actual
         }
@@ -31,6 +43,8 @@ fun gestor(): Int {
 
             println("El ascensor está en Plaza de Compostela, nivel actual: $nivel_actual")
 
+            estado_actual = Estados.Idle
+
             return nivel_actual
         }
         is Estados.MovingDOWN -> {
@@ -41,6 +55,8 @@ fun gestor(): Int {
             Niveles.nivel_0.value = true
 
             println("El ascensor está en Garcia Barbon, nivel actual: $nivel_actual")
+
+            estado_actual = Estados.Idle
 
             return nivel_actual
         }
